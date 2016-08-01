@@ -1,0 +1,1 @@
+Tolerance settings very high. Physical convergence not guaranteed. Benchmark does not test solution but basic functioning of TH2M Newton loop.
