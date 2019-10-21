@@ -1,0 +1,41 @@
+GINA - Process
+
+#PROCESS
+  $PCS_TYPE
+    RICHARDS_FLOW
+  $BOUNDARY_CONDITION_OUTPUT
+  $TIME_CONTROLLED_EXCAVATION
+     2 1 0 1
+  $NEGLECT_H_INI_EFFECT
+    1
+  $UPDATE_INI_STATE
+    1
+$ELEMENT_MATRIX_OUTPUT
+0	
+	
+#PROCESS
+  $PCS_TYPE
+    DEFORMATION
+  $NUM_TYPE
+    NEW
+  $BOUNDARY_CONDITION_OUTPUT
+  $TIME_CONTROLLED_EXCAVATION
+     2 1 0 1   
+  $NEGLECT_H_INI_EFFECT
+    1   
+  $UPDATE_INI_STATE
+    1    
+$ELEMENT_MATRIX_OUTPUT
+0	
+
+#ADDITIONAL_EXCAVATED_SUBDOMAIN_IDS
+1 1 ; number of additional excavated subdomains //  excavated subdomain IDS ...
+
+#CONCRETE_LINING_AFTER_EXCAVATION
+ 1 3
+
+#STOP 
+
+
+ ;MaterialGroup (>=0) || Number of the excavated subdomain (<0)//Excavation Direction, 0=X, 1=Y, 2=Z//Excave Begin Coordinate in the excav direction//Excave Distance Curve
+
