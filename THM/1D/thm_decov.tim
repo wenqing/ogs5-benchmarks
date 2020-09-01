@@ -1,0 +1,53 @@
+GeoSys-OUT: Output ------------------------------------------------
+#TIME_STEPPING
+ $PCS_TYPE
+  RICHARDS_FLOW
+$TIME_STEPS
+4  0.001
+1  0.006 
+9  0.01
+9  0.1
+36  0.25
+50 0.6
+4 1
+4 2.5
+2 8
+2 15
+4   10
+80    10.75
+90     100
+100  900
+90     10000
+ $TIME_END
+  1.0E+6
+ $TIME_START
+  0.0
+ $TIME_UNIT
+  YEAR      
+#TIME_STEPPING
+ $PCS_TYPE
+  HEAT_TRANSPORT
+ $TIME_STEPS
+4  0.001
+1  0.006 
+9  0.01
+9  0.1
+36  0.25
+50 0.6
+4 1
+4 2.5
+2 8
+2 15
+4   10
+80    10.75
+90     100
+100  900
+90     10000
+ $TIME_END
+  1.0E+6
+ $TIME_START
+  0.0
+ $TIME_UNIT
+  YEAR      
+#STOP
+
